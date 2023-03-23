@@ -4,9 +4,11 @@ def is_two(a):
     else:
       return False
     
-    
+def is_vowel(char):
+    return char.lower() in 'aeiou'
 
-    def is_consonant(char):
+
+def is_consonant(char):
     return char.lower() not in 'aeiou'
 
 
@@ -23,7 +25,7 @@ def is_word(string):
         string=string.capitalize()
         return string
   
-    def calculate_tip(bill,tip):
+def calculate_tip(bill,tip):
     return bill*tip+bill
 
 def apply_discount(discount,price):
